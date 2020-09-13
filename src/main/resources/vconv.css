@@ -34,6 +34,29 @@
 
 */
 
+.drop-area {
+    /* -fx-background-color : #110326; */
+    -fx-image : url("drop-area-image.jpg");
+
+    /* The following rules are meant for background images.
+       Commented out since I don't need it for the current rule.
+       Placed here for reference. I might need them for some other rules.
+ 
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+    */
+
+    /* -fx-background-radius : 5.0; This sets radius of rounded corners. */
+    /* -fx-background-insets : 5.0 5.0 5.0 5.0; Uncomment if you want a white border (inset) around the Widget */
+    -fx-hgap : 10pt; /* intergap spacing among horizontal cells */
+    -fx-vgap : 15pt; /* intergap spacing between rows of cells */
+    -fx-padding : 20pt; /* margin around the area */
+    -fx-spacing : 10pt;  /* spaces between child nodes */
+    -fx-alignment : center; /* Alignment of the child nodes within the grid. */
+}
+
 .grid {
     -fx-background-color : #110326; 
     -fx-background-image : url("dark-blue-background-portrait.jpg"); /* */
@@ -84,7 +107,7 @@
 /* For the HBox containing the OK and Cancel Buttons. */
 
 .button-box {
-    -fx-alignment : center-right;   /* Where the buttons are located. */
+    -fx-alignment : center;         /* Where the buttons are located. */
     -fx-padding : 5pt;              /* The spacing around contents of the HBox */
     -fx-spacing : 10pt;             /* Spacing between Buttons */
     // -fx-background-color : #28114d; /* Color of the HBox */
@@ -103,8 +126,8 @@
 /* Color of the buttons */
 
 .buttons {
-    -fx-background-color : #28114d;
-    -fx-text-fill : #ffffff;    /* This is the font color. It is pure white. */
+    /* -fx-background-color : #28114d; */
+    /* -fx-text-fill : #ffffff;    This is the font color. It is pure white. */
 }
 
 

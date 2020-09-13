@@ -4,31 +4,19 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.geometry.Insets?>
 <?import java.net.URL?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" styleClass="grid">
+<VBox xmlns:fx="http://javafx.com/fxml">
     <children>
-        <HBox styleClass="text-entry-box">
-            <Label text = "File Name" styleClass="field-labels"/>
-            <TextField fx:id="file_full_path" />
-            <Button fx:id="browse_button" text = "Browse"/>
-        </HBox>
-        <HBox styleClass="text-entry-box">
-            <Label text = "Target Field" styleClass="field-labels"/>
-            <TextField fx:id="target_field"/>
-        </HBox>
-        <HBox styleClass="text-entry-box">
-            <Label text = "Target Value" styleClass="field-labels"/>
-            <TextField fx:id="target_value"/>
-        </HBox>
+        <ImageView fitWidth="400" preserveRatio="true" styleClass="drop-area"/>
         <HBox styleClass="button-box">
-            <Button fx:id="cancel_button" text = "Cancel" styleClass="buttons"/>
-            <Button fx:id="ok_button" text = "OK" styleClass="buttons"/>
+            <Button fx:id="close_button" text = "Close" styleClass="buttons"/>
         </HBox>
     </children>
     <stylesheets>
-        <URL value="@default.css" />
+        <URL value="@vconv.css" />
     </stylesheets>
 </VBox>
-
